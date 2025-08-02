@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Work Experience - Nikunj Buddhawar</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'sans': ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-br from-gray-900 via-gray-800 to-slate-900 text-white min-h-screen">
+  <!-- Navigation -->
+  <nav class="fixed top-0 w-full z-50 bg-gray-900/80 backdrop-blur-md border-b border-gray-700/50">
+    <div class="w-full px-2 sm:px-4">
+      <div class="flex justify-between items-center h-16">
+        <div class="flex-shrink-0">
+          <span class="text-xl font-bold text-white">Nikunj Buddhawar</span>
+        </div>
+        <div class="hidden md:block">
+          <div class="ml-10 flex items-baseline space-x-8">
+            <a href="index.html" class="text-gray-300 hover:text-white transition-colors duration-200">Home</a>
+            <a href="projects.html" class="text-gray-300 hover:text-white transition-colors duration-200">Projects</a>
+            <a href="skills.html" class="text-gray-300 hover:text-white transition-colors duration-200">Skills</a>
+            <a href="work.html" class="text-white font-medium border-b-2 border-blue-500 pb-1">Work</a>
+            <a href="positions.html" class="text-gray-300 hover:text-white transition-colors duration-200">POR</a>
+            
+          </div>
+        </div>
+        <div class="md:hidden">
+          <button type="button" class="text-gray-300 hover:text-white focus:outline-none" id="mobile-menu-button">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="md:hidden hidden" id="mobile-menu">
+      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-gray-900/95 backdrop-blur-md">
+        <a href="index.html" class="text-gray-300 hover:text-white block px-3 py-2 transition-colors duration-200">Home</a>
+        <a href="projects.html" class="text-gray-300 hover:text-white block px-3 py-2 transition-colors duration-200">Projects</a>
+        <a href="skills.html" class="text-gray-300 hover:text-white block px-3 py-2 transition-colors duration-200">Skills</a>
+        <a href="work.html" class="text-white block px-3 py-2 font-medium border-l-4 border-blue-500">Work</a>
+        <a href="positions.html" class="text-gray-300 hover:text-white block px-3 py-2 transition-colors duration-200">POR</a>
+       
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-12">
+        <h1 class="text-4xl sm:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+          Work Experience
+        </h1>
+        <p class="text-xl text-gray-400">Professional internships and industry exposure</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <!-- FlairX Card -->
+        <div class="bg-gray-800/50 border border-gray-700/50 rounded-xl p-6 shadow-lg">
+          <div class="flex items-center mb-4">
+            <img src="FlairX.png" alt="TnP" class="w-16 h-16 rounded-full object-cover mr-4 border-2 border-purple-500/70">
+            <div>
+              <h3 class="text-xl font-semibold text-white">FlairX</h3>
+              <p class="text-gray-400 text-sm">San Francisco, CA</p>
+            </div>
+          </div>
+          <div class="mb-4">
+            <h4 class="text-lg font-medium text-blue-400 mb-2">Software Development Intern</h4>
+            <p class="text-gray-300 text-sm font-medium">July 2025 – Present</p>
+          </div>
+          <button onclick="toggleExpand('flairx')" class="bg-blue-600 hover:bg-blue-700 text-white text-sm px-4 py-2 rounded mt-2">
+            Description
+          </button>
+          <div id="flairx-content" class="hidden mt-4 pt-4 border-t border-gray-700/50">
+            <p class="text-gray-300 leading-relaxed">
+              Selected for a San Francisco-based AI startup. Built and optimized interactive React/MERN web apps, integrated LangChain and LangGraph for agentic AI, contributed to real-world product features, and followed agile workflows.
+            </p>
+            <div class="mt-3 flex flex-wrap gap-2">
+              <span class="px-2 py-1 bg-blue-600/20 text-blue-400 text-xs rounded-md">React</span>
+              <span class="px-2 py-1 bg-blue-600/20 text-blue-400 text-xs rounded-md">MERN Stack</span>
+              <span class="px-2 py-1 bg-blue-600/20 text-blue-400 text-xs rounded-md">LangChain</span>
+              <span class="px-2 py-1 bg-blue-600/20 text-blue-400 text-xs rounded-md">AI/ML</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- SHRIS Card -->
+        <div class="bg-gray-800/50 border border-gray-700/50 rounded-xl p-6 shadow-lg">
+          <div class="flex items-center mb-4">
+            <img src="Shris.png" alt="TnP" class="w-16 h-16 rounded-full object-cover mr-4 border-2 border-purple-500/70">
+            <div>
+              <h3 class="text-xl font-semibold text-white">SHRIS Infotech</h3>
+              <p class="text-gray-400 text-sm">Hyderabad, TS</p>
+            </div>
+          </div>
+          <div class="mb-4">
+            <h4 class="text-lg font-medium text-green-400 mb-2">AI Engineering Intern</h4>
+            <p class="text-gray-300 text-sm font-medium">June 2025 – July 2025</p>
+          </div>
+          <button onclick="toggleExpand('shris')" class="bg-green-600 hover:bg-green-700 text-white text-sm px-4 py-2 rounded mt-2">
+            Description
+          </button>
+          <div id="shris-content" class="hidden mt-4 pt-4 border-t border-gray-700/50">
+            <p class="text-gray-300 leading-relaxed">
+              Enhanced the AI engine of a fintech product. Worked with LLMs and n8n automation platform, built workflows for trade prediction and financial insights, and explored financial market instruments.
+            </p>
+            <div class="mt-3 flex flex-wrap gap-2">
+              <span class="px-2 py-1 bg-green-600/20 text-green-400 text-xs rounded-md">LLMs</span>
+              <span class="px-2 py-1 bg-green-600/20 text-green-400 text-xs rounded-md">n8n</span>
+              <span class="px-2 py-1 bg-green-600/20 text-green-400 text-xs rounded-md">FinTech</span>
+              <span class="px-2 py-1 bg-green-600/20 text-green-400 text-xs rounded-md">AI Engine</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- JS -->
+  <script>
+    document.getElementById('mobile-menu-button').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+
+    function toggleExpand(id) {
+      const content = document.getElementById(id + '-content');
+      const allContents = document.querySelectorAll('[id$="-content"]');
+      allContents.forEach(c => {
+        if (c !== content && !c.classList.contains('hidden')) {
+          c.classList.add('hidden');
+        }
+      });
+      content.classList.toggle('hidden');
+    }
+  </script>
+</body>
+</html>

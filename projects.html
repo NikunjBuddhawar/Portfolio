@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Nikunj Buddhawar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-br from-gray-900 via-gray-800 to-slate-900 text-white min-h-screen">
+    <nav class="fixed top-0 w-full z-50 bg-gray-900/80 backdrop-blur-md border-b border-gray-700/50">
+        <div class="w-full px-2 sm:px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <span class="text-xl font-bold text-white">Nikunj Buddhawar</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="text-gray-300 hover:text-white transition-colors duration-200">Home</a>
+                        <a href="projects.html" class="text-white font-medium border-b-2 border-blue-500 pb-1">Projects</a>
+                        <a href="skills.html" class="text-gray-300 hover:text-white transition-colors duration-200">Skills</a>
+                        <a href="work.html" class="text-gray-300 hover:text-white transition-colors duration-200">Work</a>
+                        <a href="positions.html" class="text-gray-300 hover:text-white transition-colors duration-200">POR</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button type="button" class="text-gray-300 hover:text-white focus:outline-none" id="mobile-menu-button">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-gray-900/95 backdrop-blur-md">
+                <a href="index.html" class="text-gray-300 hover:text-white block px-3 py-2 transition-colors duration-200">Home</a>
+                <a href="projects.html" class="text-white block px-3 py-2 font-medium border-l-4 border-blue-500">Projects</a>
+                <a href="skills.html" class="text-gray-300 hover:text-white block px-3 py-2 transition-colors duration-200">Skills</a>
+                <a href="work.html" class="text-gray-300 hover:text-white block px-3 py-2 transition-colors duration-200">Work</a>
+                <a href="positions.html" class="text-gray-300 hover:text-white block px-3 py-2 transition-colors duration-200">POR</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-20 pb-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+                    Projects
+                </h1>
+                <p class="text-xl sm:text-2xl text-gray-400 max-w-3xl mx-auto">
+                    Personal and collaborative work in AI, web, and finance
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="bg-gray-800/50 rounded-xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-700/50 backdrop-blur-sm">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-2xl font-bold text-white">FlowCast</h3>
+                        <a href="https://github.com/NikunjBuddhawar/FlowCast" target="_blank" rel="noopener noreferrer"
+                           class="bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded-lg font-medium transition-colors duration-200 flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            GitHub
+                        </a>
+                    </div>
+                    <button onclick="toggleDescription('flowcast')" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition-colors duration-200 mb-4">
+                        Description
+                    </button>
+                    <div id="flowcast-desc" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <div class="pt-4 border-t border-gray-700">
+                            <p class="text-gray-300 mb-4">Built a financial time series forecaster using deep learning models for stock prediction.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-purple-600/30 text-purple-300 px-3 py-1 rounded-full text-sm">LSTM</span>
+                                <span class="bg-green-600/30 text-green-300 px-3 py-1 rounded-full text-sm">Keras</span>
+                                <span class="bg-yellow-600/30 text-yellow-300 px-3 py-1 rounded-full text-sm">Python</span>
+                                <span class="bg-blue-600/30 text-blue-300 px-3 py-1 rounded-full text-sm">Finance</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800/50 rounded-xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-700/50 backdrop-blur-sm">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-2xl font-bold text-white">NeonSpire</h3>
+                        <a href="https://github.com/NikunjBuddhawar/NeonSpire" target="_blank" rel="noopener noreferrer"
+                           class="bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded-lg font-medium transition-colors duration-200 flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            GitHub
+                        </a>
+                    </div>
+                    <button onclick="toggleDescription('neonspire')" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition-colors duration-200 mb-4">
+                        Description
+                    </button>
+                    <div id="neonspire-desc" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <div class="pt-4 border-t border-gray-700">
+                            <p class="text-gray-300 mb-4">AI-powered web interface for creative writing and prompt engineering.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-purple-600/30 text-purple-300 px-3 py-1 rounded-full text-sm">LangChain</span>
+                                <span class="bg-green-600/30 text-green-300 px-3 py-1 rounded-full text-sm">Flask</span>
+                                <span class="bg-yellow-600/30 text-yellow-300 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                                <span class="bg-blue-600/30 text-blue-300 px-3 py-1 rounded-full text-sm">OpenAI API</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800/50 rounded-xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-700/50 backdrop-blur-sm">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-2xl font-bold text-white">NeuraVoice</h3>
+                        <a href="https://github.com/NikunjBuddhawar/NeuraVoice" target="_blank" rel="noopener noreferrer"
+                           class="bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded-lg font-medium transition-colors duration-200 flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            GitHub
+                        </a>
+                    </div>
+                    <button onclick="toggleDescription('neuravoice')" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition-colors duration-200 mb-4">
+                        Description
+                    </button>
+                    <div id="neuravoice-desc" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <div class="pt-4 border-t border-gray-700">
+                            <p class="text-gray-300 mb-4">Real-time voice cloning and synthesis platform.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-purple-600/30 text-purple-300 px-3 py-1 rounded-full text-sm">Python</span>
+                                <span class="bg-green-600/30 text-green-300 px-3 py-1 rounded-full text-sm">Tacotron2</span>
+                                <span class="bg-yellow-600/30 text-yellow-300 px-3 py-1 rounded-full text-sm">Deep Learning</span>
+                                <span class="bg-blue-600/30 text-blue-300 px-3 py-1 rounded-full text-sm">Flask</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800/50 rounded-xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-700/50 backdrop-blur-sm">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-2xl font-bold text-white">PricePulse</h3>
+                        <a href="https://github.com/NikunjBuddhawar/PricePulse-ML-Based-Stock-Momentum-Indicator" target="_blank" rel="noopener noreferrer"
+                           class="bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded-lg font-medium transition-colors duration-200 flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            GitHub
+                        </a>
+                    </div>
+                    <button onclick="toggleDescription('pricepulse')" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition-colors duration-200 mb-4">
+                        Description
+                    </button>
+                    <div id="pricepulse-desc" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <div class="pt-4 border-t border-gray-700">
+                            <p class="text-gray-300 mb-4">Tracks product prices and alerts users when prices drop.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-purple-600/30 text-purple-300 px-3 py-1 rounded-full text-sm">Python</span>
+                                <span class="bg-green-600/30 text-green-300 px-3 py-1 rounded-full text-sm">Selenium</span>
+                                <span class="bg-yellow-600/30 text-yellow-300 px-3 py-1 rounded-full text-sm">MongoDB</span>
+                                <span class="bg-blue-600/30 text-blue-300 px-3 py-1 rounded-full text-sm">BeautifulSoup</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800/50 rounded-xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-700/50 backdrop-blur-sm">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-2xl font-bold text-white">Sentiment Analysis</h3>
+                        <a href="https://github.com/NikunjBuddhawar/Sentiment-Analysis-with-Simple-RNN" target="_blank" rel="noopener noreferrer"
+                           class="bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded-lg font-medium transition-colors duration-200 flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            GitHub
+                        </a>
+                    </div>
+                    <button onclick="toggleDescription('sentiment')" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition-colors duration-200 mb-4">
+                        Description
+                    </button>
+                    <div id="sentiment-desc" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <div class="pt-4 border-t border-gray-700">
+                            <p class="text-gray-300 mb-4">ML model to classify sentiment in text reviews with visualization dashboard.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-purple-600/30 text-purple-300 px-3 py-1 rounded-full text-sm">Scikit-learn</span>
+                                <span class="bg-green-600/30 text-green-300 px-3 py-1 rounded-full text-sm">Matplotlib</span>
+                                <span class="bg-yellow-600/30 text-yellow-300 px-3 py-1 rounded-full text-sm">Streamlit</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800/50 rounded-xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-700/50 backdrop-blur-sm">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-2xl font-bold text-white">StockSense</h3>
+                        <a href="https://github.com/NikunjBuddhawar/StockSense" target="_blank" rel="noopener noreferrer"
+                           class="bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded-lg font-medium transition-colors duration-200 flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            GitHub
+                        </a>
+                    </div>
+                    <button onclick="toggleDescription('stocksense')" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition-colors duration-200 mb-4">
+                        Description
+                    </button>
+                    <div id="stocksense-desc" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <div class="pt-4 border-t border-gray-700">
+                            <p class="text-gray-300 mb-4">Comprehensive stock analyzer using market indicators and trend predictors.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-purple-600/30 text-purple-300 px-3 py-1 rounded-full text-sm">Pandas</span>
+                                <span class="bg-green-600/30 text-green-300 px-3 py-1 rounded-full text-sm">Numpy</span>
+                                <span class="bg-yellow-600/30 text-yellow-300 px-3 py-1 rounded-full text-sm">TA-Lib</span>
+                                <span class="bg-blue-600/30 text-blue-300 px-3 py-1 rounded-full text-sm">Plotly</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800/50 rounded-xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-700/50 backdrop-blur-sm">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-2xl font-bold text-white">ANN Classification</h3>
+                        <a href="https://github.com/NikunjBuddhawar/ANN-Classification-Churn" target="_blank" rel="noopener noreferrer"
+                           class="bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded-lg font-medium transition-colors duration-200 flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            GitHub
+                        </a>
+                    </div>
+                    <button onclick="toggleDescription('ann')" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition-colors duration-200 mb-4">
+                        Description
+                    </button>
+                    <div id="ann-desc" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                        <div class="pt-4 border-t border-gray-700">
+                            <p class="text-gray-300 mb-4">Built an Artificial Neural Network classifier for multi-class datasets.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-purple-600/30 text-purple-300 px-3 py-1 rounded-full text-sm">TensorFlow</span>
+                                <span class="bg-green-600/30 text-green-300 px-3 py-1 rounded-full text-sm">Python</span>
+                                <span class="bg-yellow-600/30 text-yellow-300 px-3 py-1 rounded-full text-sm">sklearn</span>
+                                <span class="bg-blue-600/30 text-blue-300 px-3 py-1 rounded-full text-sm">NumPy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800/30 rounded-xl p-6 shadow-xl border border-gray-700/30 backdrop-blur-sm flex items-center justify-center">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-gray-700/50 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-400 mb-2">Coming Soon</h3>
+                        <p class="text-gray-500">More projects in development</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Project description toggle
+        let currentlyOpen = null;
+
+        function toggleDescription(projectId) {
+            const element = document.getElementById(projectId + '-desc');
+            
+            // If another is open, close it first
+            if (currentlyOpen && currentlyOpen !== element) {
+                currentlyOpen.style.maxHeight = '0px';
+            }
+            
+            if (element.style.maxHeight === '0px' || !element.style.maxHeight) {
+                element.style.maxHeight = element.scrollHeight + 'px';
+                currentlyOpen = element;
+            } else {
+                element.style.maxHeight = '0px';
+                currentlyOpen = null;
+            }
+        }
+    </script>
+</body>
+</html>
